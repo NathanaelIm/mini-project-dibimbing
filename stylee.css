@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+/* navbar */
+#navbar {
+  position: fixed;
+  width: 100%;
+  /* Ubah z-index ke 10 */
+  z-index: 10;
+  background: #f4f5f7;
+}
+#logo {
+  padding-left: 10px;
+  color: black;
+  text-shadow: 0px 1px 1px black;
+  margin-bottom: 5px;
+}
+#logo span {
+  color: red;
+  font-size: 30px;
+}
+.navbar-toggler span {
+  color: red;
+}
+.navbar-nav {
+  margin-left: 20px;
+}
+.nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 550;
+  color: black;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  transition: 0.5s ease;
+}
+
+.nav-item .nav-link:hover {
+  background: red;
+  color: white;
+}
+
+#navbar form button {
+  background: rgba(255, 0, 0, 0.8);
+  color: white;
+  border: none;
+}
+
+/* Home section */
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(./banner_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home .content {
+  text-align: center;
+  padding-top: 300px;
+}
+
+.content h5 {
+  color: white;
+  font-size: 50px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  text-shadow: 0px 1px 1px black;
+}
+.content p{
+  color: white;
+  font-size: 20px;
+}
+
+/* Home section end */
+/* Booking page */
+
+.btnbooking{
+  
+  padding: 12px 24px;
+  color: white;
+background-color: red;
+  display: inline-block;
+  opacity: 0.8;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+.book-page{
+  height: 100vh;
+  background-size: cover;
+  background-color: #EADBC8;
+  padding-top: 150px;
+}
+.main-text h1{
+  text-align: center;
+  font-weight: 550;
+  text-shadow: 0px 1px 1px black;
+  margin-bottom: 20px;
+}
+.main-text h1 span{
+  color: red;
+}
+.book-page .card{
+  
+  border-radius: 10px;
+  box-shadow: 0 5px 5px -6px black;
+}
+
+.book-page form input {
+  padding:10px;
+  color:black;
+  border:none;
+  outline:none;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px -6px black;
+
+}
+
+.book-page form textarea{
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  box-shadow: 0px 5px 5px -6px black;
+  height: 200px;
+}
+
+.book-page .submit{
+  width: 160px;
+  font-size: 16px;
+  font-weight: 550;
+  background: red;
+  color: white;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+
+.book-page .submit:hover{
+  width: 170px;
+}
+
+@media(max-width:765px){
+  .book-page{
+    padding: 0;
+  }
+  .main-text h1{
+    margin-top: 20px;
+  }
+}
+/* END booking page */
+
+/* Section Kamar */
+
+.main-txt h1{
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px black;
+}
+
+.kamar .card{
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1)0 4px 12px;
+}
+
+.kamar .card img{
+  border-radius: 5px;
+}
+.kamar .card .card-body{
+  background: transparent;
+}
+
+.kamar .card .card-body h3{
+  font-size: 25px;
+  font-weight: 600;
+}
+.kamar .card .card-body p{
+  font-size: 15px;
+}
+.checked{
+  color: #ffa500;
+}
+
+.star i{
+  font-size: 15px;
+}
+.kamar .card .card-body h6{
+  font-size: 20px;
+}
+.kamar .card .card-body a{
+  padding: 10px;
+  text-decoration: none;
+  background: #ffa500;
+  color: white;
+  border-radius: 5px;
+}
+/* Section kamar end */
